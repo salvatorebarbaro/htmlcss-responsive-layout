@@ -1,0 +1,19 @@
+*{
+    color: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: red dashed 2px;
+    /* regola di test  */
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+/* inizio navbar */
+#navbar
+{
+    color: red;
+}
+/* fine navbar */
