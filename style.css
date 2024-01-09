@@ -37,3 +37,42 @@ body{
     padding-right: 35px;
 }
 /* fine navbar */
+/* inizio sezione cards  */
+
+/* fine sezione cards  */
+/* inizio sezione planning  */
+#planning{
+    background-color: #9792E4;
+    margin-top: 80px; ;
+    margin-bottom:65px ;
+}
+#head_planning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 35px;
+}
+#head_planning div:nth-of-type(1){
+    width:310px ;
+    height: 300px;
+    background-color: blue;
+    /* test da cancellare, inserite per vedere spazi  */
+}
+#footer_planning
+{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 62px;
+    background-color: white;
+    /* da ritornare su questo punto  */
+
+}
+#footer_planning div:nth-of-type(1){
+    width:265px ;
+    height: 285px;
+    background-color: blue;
+    /* test da cancellare, inserite per vedere spazi  */
+}
+
+/* fine sezione planning   */
