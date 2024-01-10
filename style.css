@@ -14,28 +14,51 @@ body{
 /* inizio navbar */
 #navbar
 {
-    
-    height: 78px;
-    /* regola di test  */
     background-color: #0084FD;
     color: white;
     display: flex;
     align-items: center;
     justify-content:space-between;
     margin-bottom: 50px;
+    padding-top:18px ;
+    padding-bottom: 22px;
     
 
 }
-#navbar div:nth-of-type(1){
+#navbar #section_left_navbar{
     
     
     padding-left: 35px;
     
 }
-#navbar div:nth-of-type(2){
-    
+#navbar #section_right_navbar{
+    display: flex;
     padding-right: 35px;
 }
+#navbar #section_right_navbar a{
+    color: white;
+}
+/* inizio sezione da inserire quando modificheremo css per display big  */
+.menu_a_scomparsa
+{
+    display: none;
+    align-items: center;
+
+}
+.menu_a_scomparsa > div
+{
+    padding-right: 32px;
+}
+.menu_a_scomparsa a
+{
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    
+
+} 
+/* fine sezione da inserire quando modificheremo css per display big  */
+
 /* fine navbar */
 /* inizio sezione cards  */
 #cards{
@@ -48,7 +71,8 @@ body{
 
 }
 .conteiner.cards
-{
+{   
+    max-width: 310px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -56,11 +80,76 @@ body{
 
 }
 .tool
-{   width: 310px;
-    height: 365px;
+{   
+    width:100%;
+    
     /* test da cancellare */
     background-color: #B5DDFF;
+    border-radius: 15px;
 
+}
+.conteiner.cards .tool:nth-of-type(1)
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+
+
+}
+.conteiner.cards .tool h2
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    color:#0385FD ;
+    text-align: center;
+
+}
+.conteiner.cards .tool:nth-of-type(1) div:nth-of-type(1) p
+{
+    padding-bottom: 38px;
+    text-align: center;
+}
+.conteiner.cards .tool p
+{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.conteiner.cards .tool:nth-of-type(1) div:nth-of-type(1) div
+{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.conteiner.cards .tool:nth-of-type(1) div:nth-of-type(1) a
+{
+    
+    padding: 0 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0385FD;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    gap: 12px;
+    max-width: 214px;
+    margin-bottom: 40px;
+}
+.conteiner.cards .tool:nth-of-type(1) div:nth-of-type(2) img
+{
+    width: 100%;
+    max-width: 800px;
+}
+.simbol_cards
+{
+    color:#0084FD;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
 }
 
 /* fine sezione cards  */
@@ -70,10 +159,14 @@ body{
     margin-top: 80px; ;
     margin-bottom:65px ;
     display: flex;
+    justify-content: center;
+}
+#container_planning
+{
+    max-width: 328px;
+    display: flex;
     flex-direction: column;
     gap: 35px;
-    
-
 }
 #head_planning{
     display: flex;
@@ -81,11 +174,23 @@ body{
     align-items: center;
     padding-top: 60px;
 }
-#head_planning div:nth-of-type(1){
-    width:310px ;
-    height: 300px;
-    background-color: blue;
-    /* test da cancellare, inserite per vedere spazi  */
+#head_planning div:nth-of-type(1)
+{
+    margin-bottom: 100px;
+}
+#head_planning div:nth-of-type(1) img
+{
+    width: 100%;
+    max-width: 880px;
+}
+#head_planning h2
+{
+    margin-bottom: 62px;
+    font-size: 27px;
+}
+#head_planning h2, #head_planning p
+{
+    color: white;
 }
 #footer_planning
 { 
@@ -103,11 +208,25 @@ body{
     border-radius: 10%;
 }
 
-#footer_planning #conteiner_footer_planning div:nth-of-type(1){
-    width:265px ;
-    height: 285px;
-    background-color: blue;
-    /* test da cancellare, inserite per vedere spazi  */
+#footer_planning #conteiner_footer_planning img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#footer_planning h3
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#footer_planning p
+{
+    margin-bottom: 40px;
+}
+#footer_planning .fa-solid
+{
+    background-color: #9792E4;
+    padding: 20px;
+    border-radius: 30px; 
 }
 
 /* fine sezione planning   */
@@ -196,3 +315,78 @@ body{
 }
 
 /* fine sezione footer   */
+/* inizio media querty tablet */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) 
+{ 
+    /* inizio stilizzazione cards  */
+    .tool
+    {
+        width: 30%;
+    }
+    .conteiner.cards{
+        max-width: 750px;
+    }
+    .conteiner.cards .tool:nth-of-type(1)
+    {
+        width: 60%;
+    }
+    /* fine stilizzazione cards  */
+    /* inizio stilizzazione planning  */
+    #container_planning
+    {
+        max-width: 724px;
+    }
+    /* fine stilizzazione planning  */
+}
+/* fine media querty tablet */
+/* inizio media querty da laptop a deckstop */
+@media screen and (min-device-width: 769px)
+{
+    /* inizio stilizzazione navbar  */
+    #navbar
+    {
+        max-width: 1140px;
+    }
+    #navbar #section_right_navbar a
+    {
+        display: none;
+    }
+    .menu_a_scomparsa
+    {
+        display: flex;
+    }
+    /* fine stilizzazione navbar  */
+    
+    /* inizio stilizzazione cards  */
+    .tool
+    {
+        width: 30%;
+    }
+    .conteiner.cards{
+        max-width: 1140px;
+    }
+    .conteiner.cards .tool:nth-of-type(1)
+    {
+        width: 60%;
+    }
+     /* fine stilizzazione cards  */
+     /* inizio stilizzazione planning*/
+     #container_planning
+     {
+        max-width: 905px;
+        flex-direction: row;
+        padding: 105px 0 62px;
+     }
+     #conteiner_footer_planning
+     {
+        max-height: 558px;
+     }
+     #footer_planning
+     {
+        align-items: flex-end;
+        padding-bottom: 0px;
+     }
+     /* fine stilizzazione planning*/
+    
+} 
+/* fine media querty da laptop a deckstop */
