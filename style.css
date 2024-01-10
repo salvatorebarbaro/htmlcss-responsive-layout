@@ -45,12 +45,17 @@ body{
     background-color: #9792E4;
     margin-top: 80px; ;
     margin-bottom:65px ;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+
 }
 #head_planning{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 35px;
+    padding-top: 60px;
 }
 #head_planning div:nth-of-type(1){
     width:310px ;
@@ -94,6 +99,7 @@ body{
 .card{
     height: 500px;
     width: 315px;
+    /* da sostituire con margini automatici per far si che siano automatici  */
     /* test  */
     display: flex;
     justify-content: center;
@@ -101,17 +107,42 @@ body{
     /* da togliere quando usciamo dal mobile  */
     background-color: #9792E4;
     margin-bottom: 34px;
+    border-radius: 20px;
 }
 .card #immagine{
     width:200px ;
     height:200px ;
     /* test  */
     background-color: black;
+    margin-top:30px;
 
 }
-/* da rivedere regola sotto  */
-#partners > div{
-    margin-bottom: 50px;
-    /* 1) da rivedere perchè non si riesce a selezionare i primi 3 div  */
-}
+
 /* fine sezione partners  */
+/* inizio sezione benefits  */
+#benefits{
+    background-color:#9792E4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#benefits h2
+{
+    font-size: 28px;
+
+}
+#conteiner_cards_benefits{
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefit{
+    width: calc(100 / 3 - 30px / 3 * 2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* fine sezione benefits   */
