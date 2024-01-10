@@ -38,6 +38,30 @@ body{
 }
 /* fine navbar */
 /* inizio sezione cards  */
+#cards{
+    
+    
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.conteiner.cards
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+.tool
+{   width: 310px;
+    height: 365px;
+    /* test da cancellare */
+    background-color: #B5DDFF;
+
+}
 
 /* fine sezione cards  */
 /* inizio sezione planning  */
@@ -137,12 +161,38 @@ body{
 #conteiner_cards_benefits{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .benefit{
-    width: calc(100 / 3 - 30px / 3 * 2);
+    width: calc(100% / 3 - 30px / 3 * 2);
     display: flex;
     flex-direction: column;
+    color: #9792E4;
+    background-color: white;
 }
 
 
 /* fine sezione benefits   */
+/* inizio sezione about us  */
+#about_us
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* fine sezione about us   */
+/* inizio sezione free  */
+#free{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* fine sezione free   */
+/* inizio sezione footer   */
+#footer
+{
+    background-color: #333333;
+
+}
+
+/* fine sezione footer   */
