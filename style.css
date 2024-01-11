@@ -131,11 +131,11 @@ body{
 .conteiner.cards .tool:nth-of-type(1) div:nth-of-type(1) a
 {
     
-    padding: 0 50px 0;
+    padding: 16px 50px 16px;
     display: flex;
     justify-content: center;
     background-color: #0385FD;
-    border-radius: 10px;
+    border-radius: 30px;
     color: white;
     text-decoration: none;
     gap: 12px;
@@ -324,7 +324,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 74px;
-
+    margin-bottom: 95px;
 }
 #benefits h2
 {
@@ -422,6 +422,18 @@ body{
         max-width: 724px;
     }
     /* fine stilizzazione planning  */
+    /* inizio stilizzazione benefits  */
+    #conteiner_cards_benefits
+    {
+        max-width: 750px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .benefit
+    {
+        width: calc(50% - 30px);
+    }
+    /* fine stilizzazione benefits  */
 }
 /* fine media querty tablet */
 /* inizio media querty da laptop a deckstop */
@@ -479,6 +491,18 @@ body{
         padding-bottom: 0px;
      }
      /* fine stilizzazione planning*/
+     /* inizio stilizzazione benefits  */
+    #conteiner_cards_benefits
+    {
+        max-width: 1140px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .benefit
+    {
+        width: 30%;
+    }
+    /* fine stilizzazione benefits  */
     
 } 
 /* fine media querty da laptop a deckstop */
