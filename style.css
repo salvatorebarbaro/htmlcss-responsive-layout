@@ -412,6 +412,48 @@ body{
 {
     margin-bottom: 60px;
 }
+#container_aboutus .container.footer #container_img_aboutus
+{
+    width: 100%;
+    margin-bottom: 36px;
+}
+.container.footer #container_img_aboutus div:nth-of-type(1)
+{
+    position: relative;
+}
+
+.container.footer #container_img_aboutus div:nth-of-type(1) img
+{
+    max-width: 200px ;
+    max-height: 200px;
+    border-radius: 50%;
+}
+.container.footer #container_img_aboutus div:nth-of-type(1) .fa-solid
+{
+    font-size: 48px;
+    color: #9792E4;
+    position: absolute;
+    right: 118px;
+}
+#container_aboutus .container.footer h3
+{
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #9792E4;
+}
+#container_aboutus .container.footer div:nth-of-type(2)
+{
+    display: flex;
+    gap: 12px;
+}
+#container_aboutus .container.footer a
+{
+    color: white;
+    background-color: #9792E4;
+    padding: 10px 16px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+}
 
 /* fine sezione about us   */
 /* inizio sezione free  */
