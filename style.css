@@ -402,7 +402,7 @@ body{
 }
 #container_aboutus p
 {
-    line-height: 20px;
+    line-height: 34px;
 }
 #container_aboutus .container.head p:nth-of-type(1)
 {
@@ -581,6 +581,30 @@ body{
         width: calc(50% - 30px);
     }
     /* fine stilizzazione benefits  */
+    /* inizio stilizzazione aboutus  */
+    #container_aboutus
+    {
+        max-width: 750px;
+        flex-direction: row;
+        gap: 90px;
+    }
+    #container_img_aboutus div:nth-of-type(1)
+    {
+        width: 100%;
+    }
+    .container.footer #container_img_aboutus div:nth-of-type(1) .fa-solid
+    {
+        right: 1px;
+    }
+    #container_aboutus .container.footer h3
+    {
+        max-width: 250px;
+    }
+
+   
+    
+    /* fine stilizzazione aboutus  */
+
     /* inizio stilizzazione free  */
     #free .conteiner.free
     {
@@ -662,6 +686,29 @@ body{
         width: 30%;
     }
     /* fine stilizzazione benefits  */
+    /* inizio stilizzazione aboutus  */
+    #container_aboutus
+    {
+        max-width: 1040px;
+        flex-direction: row;
+        gap: 90px;
+    }
+    #container_img_aboutus div:nth-of-type(1)
+    {
+        width: 100%;
+    }
+    .container.footer #container_img_aboutus div:nth-of-type(1) .fa-solid
+    {
+        right: 1px;
+    }
+    #container_aboutus .container.footer h3
+    {
+        max-width: 250px;
+    }
+
+   
+    
+    /* fine stilizzazione aboutus  */
     /* inizio stilizzazione free  */
     #free .conteiner.free
     {
