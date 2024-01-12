@@ -381,16 +381,103 @@ body{
 #about_us
 {
     display: flex;
-    flex-wrap: wrap;
-
+    justify-content: center;
 }
+#container_aboutus
+{
+    max-width: 312px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 78px;
+}
+#container_aboutus .container.head
+{
+    width: 100%;
+}
+#container_aboutus .container.head h2
+{
+    color:#9792E4;
+    margin-bottom: 60px;
+    font-size: 35px;
+}
+#container_aboutus p
+{
+    line-height: 20px;
+}
+#container_aboutus .container.head p:nth-of-type(1)
+{
+    margin-bottom: 75px;
+}
+#container_aboutus .container.head p:nth-of-type(2)
+{
+    margin-bottom: 60px;
+}
+
 /* fine sezione about us   */
 /* inizio sezione free  */
 #free{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #9792E4;
+    color: white;
 }
+#free .conteiner.free
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:68px ;
+    margin-bottom: 66px;
+    max-width: 312px;
+    align-items: center;
+}
+#free .conteiner.free span
+{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    gap: 5px;
+    
+}
+#free .conteiner.free span:nth-of-type(1)
+{
+    margin-bottom: 30px;
+}
+#free .conteiner.free h3
+{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+#free .conteiner.free h2
+{
+    color: #FDC15F;
+    font-size: 65px;
+    margin-bottom: 50px;
+}
+#free .conteiner.free p
+{
+    text-align: center;
+    margin-bottom: 36px;
+}
+.button_free
+{
+    padding: 30px 80px 30px;
+    background-color: white;
+    color: #9792E4;
+    border-radius: 30px;
+    margin-bottom: 36px;
+    
+}
+.button_free a
+{
+    text-decoration: none;
+}
+#free .conteiner.free span a
+{
+    color: white;
+}
+
 /* fine sezione free   */
 /* inizio sezione footer   */
 #footer
@@ -434,6 +521,12 @@ body{
         width: calc(50% - 30px);
     }
     /* fine stilizzazione benefits  */
+    /* inizio stilizzazione free  */
+    #free .conteiner.free
+    {
+        max-width: 565px;
+    }
+    /* fine stilizzazione free  */
 }
 /* fine media querty tablet */
 /* inizio media querty da laptop a deckstop */
@@ -503,6 +596,12 @@ body{
         width: 30%;
     }
     /* fine stilizzazione benefits  */
+    /* inizio stilizzazione free  */
+    #free .conteiner.free
+    {
+        max-width: 565px;
+    }
+    /* fine stilizzazione free  */
     
 } 
 /* fine media querty da laptop a deckstop */
