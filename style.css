@@ -483,7 +483,25 @@ body{
 #footer
 {
     background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
 
+}
+.container_footer 
+{
+    text-align: center;
+    padding-top: 46px ;
+    padding-bottom: 40px;
+    max-width: 312px;
+}
+.container_footer p
+{
+    margin-bottom: 72px;
+}
+.container_footer a
+{
+    color: #9792E4;
 }
 
 /* fine sezione footer   */
@@ -527,6 +545,12 @@ body{
         max-width: 565px;
     }
     /* fine stilizzazione free  */
+    /* inizio stilizzazione footer  */
+    .container_footer
+    {
+        max-width: 428px;
+    }
+    /* fine stilizzazione footer  */ 
 }
 /* fine media querty tablet */
 /* inizio media querty da laptop a deckstop */
@@ -602,6 +626,12 @@ body{
         max-width: 565px;
     }
     /* fine stilizzazione free  */
+    /* inizio stilizzazione footer  */
+    .container_footer
+    {
+        max-width: 428px;
+    }
+    /* fine stilizzazione footer  */
     
 } 
 /* fine media querty da laptop a deckstop */
